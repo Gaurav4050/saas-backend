@@ -25,6 +25,6 @@ mongoose
 
 app.use("/auth", UserAuth);
 
-app.listen(5000, () => {
-  console.log("server us runnning on prot 5000");
+app.listen(process.env.PORT, () => {
+  console.log("server us runnning on port 5000");
 });
